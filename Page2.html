@@ -1,0 +1,159 @@
+
+<?xml version = "1.0"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+
+<head>
+<title> Assignment1 </title>
+<link rel="stylesheet" type="text/css" href="Page2.css"></link>
+</head>
+
+<body>
+
+<form id="myForm">
+
+<table class="a" width="70%">
+
+<tr>
+	<td rowspan="2" colspan="2" > <img src="moutain.jpeg" alt="village" width="200" height="200"/> </td>
+
+	
+
+	<td> <select id="mySelect" onchange="selectAlert()">
+  		<option value="4">Four</option>
+  		<option value="9">Nine</option>
+  		<option value="7">Seven</option>
+  		<option value="9">Nine</option>
+	</select> </td>
+	
+	<td>
+		<input type="radio" name="drink" checked onclick="onChangeAlert()">Coke<br>
+		<input type="radio" name="drink" onclick="onChangeAlert()">NesTea<br>
+		<input type="radio" name="drink" onclick="onChangeAlert()">Water<br>
+	</td>
+	
+</tr>
+
+
+<tr>
+	<td class="specialCell">
+		<input type="checkbox" name="humanName" onclick="onChangeAlert()">Jack<br> 
+		<input type="checkbox" name="humanName" onclick="onChangeAlert()">Rose<br>
+		<input type="checkbox" name="humanName" onclick="onChangeAlert()">Wayne<br>
+	</td>
+	
+	<td>
+		<input type="text" id="text" onchange="ffun()">
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="2" class="specialCell">
+		<font size="0.6em" >I like reading Three Kingdom. Lubu killed Caocao. Wow. What a drama!</font>
+	</td>
+	
+	<td rowspan="2">
+		<i>To those whom I've fought with and to those I don't know your name We fought by one another. You did not die in vain.</i>
+	</td>
+	
+	<td colspan="2">
+		<img src="village.jpeg" alt="village" width="200" height="100"/>
+	</td>
+		
+	
+</tr>
+
+<tr>
+	<td colspan="2">
+		<img src="city.jpg" alt="village" width="200" height="100"/>
+	</td>
+</tr>
+
+<tr>
+	<td colspan="2">
+		<p>Romance of the Three Kingdoms, Luo Guanzhong, 14th century</p>
+	</td>
+	<td colspan="2">
+		<p>Weien Meng</p>
+	</td>
+<tr>
+
+
+
+
+</table>
+
+<table border="0" width=70%>
+	<tr>
+		<td  align="center" class="b">
+			<input type="submit" value="Button1" onclick="hiddenAlert()"></input>
+		</td>
+		
+		
+		
+		<td align="center" class="b">
+			<button>Button2</button>
+		</td>
+		
+		
+		<td align="center" class="b" width=33%>
+			<button>Button3</button>
+		</td>
+		
+	</tr>
+</table>
+
+<input id="myHidden" type="hidden" value="What's Up!">
+
+
+</form>
+
+
+
+<script>
+function ffun() {
+	var x = document.getElementById("text");
+   	 x.value = x.value.slice(4,5);
+   	 onChangeAlert();
+
+}
+
+
+function selectAlert(){
+	var y = document.getElementById("mySelect").value;
+	var list = document.getElementById("mySelect");
+	var listtext= list.options[list.selectedIndex].innerHTML;
+	alert(y+listtext);
+}
+
+
+function hiddenAlert() {
+	var y = document.getElementById("myHidden").value;
+  	alert(y);
+}
+
+
+
+function onChangeAlert(){
+	alert("You clicked something!");
+}
+
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+
+</html>

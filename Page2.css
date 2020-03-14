@@ -1,0 +1,45 @@
+body {
+	background-color: RosyBrown;
+	color: LightCyan;
+}
+
+table {
+	table-layout:fixed;
+
+}
+
+table.a {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+td.specialCell{
+    border: 1px solid Sienna;
+	background-color: DarkSalmon;
+}
+
+
+td.b {
+    border: none;
+	
+}
+
+
+td {
+    border: 5px solid Maroon;
+    border-collapse: collapse;
+}
+
+p {
+	color:SaddleBrown;
+	border: 2px solid MediumAquamarine;
+}
+
+h6 {
+	color:darkred;
+}
+
+i {
+	font-size: 2em
+}
